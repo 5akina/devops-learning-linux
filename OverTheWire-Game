@@ -1,0 +1,15 @@
+https://mayadevbe.me/posts/overthewire/bandit/
+https://overthewire.org/wargames/bandit/
+# Level 12 ssh bandit12@bandit.labs.overthewire.org -p 2220
+Decompress file
+xxd : makes a hexdump or reverse a hexdump with -r
+mkdir /tmp/me
+cp data.txt /tmp/me
+xxd -r data.txt > data
+file data :shows file type
+it shows gzip so gzip -d is to decompress
+mv data file.gz 
+gzip -d file.gz
+file file to display file type 
+tar archive: tar xf (tar extract file, after changing to extension to .tar)
+keep decompressing until it is ascii text
