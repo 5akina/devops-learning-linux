@@ -13,3 +13,5 @@ gzip -d file.gz
 file file to display file type 
 tar archive: tar xf (tar extract file, after changing to extension to .tar)
 keep decompressing until it is ascii text
+
+# 7 levels left
