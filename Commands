@@ -1,0 +1,37 @@
+echo
+grep
+cat
+apt-get install zsh 
+echo $SHELL
+ehco "Hello World" > data.txt
+cat /etc/shels/
+whoami: shows which user is logged in
+ctrl + l: clear
+touch
+ls -l: shows file perms & time stamps
+head: shows first 10 lines by defailt
+head -n 5: shows first 5 lines
+tail
+head -n 5 | tail -n 5
+cp data1.txt data1_copy.txt
+cp -r: copies directories
+mv: remove or rename files. mv data1.txt data2.txt OR mv data1.txt mydirectory
+rm: removes files or directories with -r
+mkdir 
+rmdir 
+vim: to edit go to insert mode by pressing I. Return to command mode with esc. Navigate with HJKL. H=right J=Down K=Up L=Right
+Save from command mode with :wq (write and quit). force it with !. :wq!
+To not save :q!
+2> error.txt: redirects errors to error.txt. To just make them disappear do 2> /dev/dull
+&> redirects errors and stdout to one file 
+# users
+sudo useradd user_name
+sudo passwd user_name :sets password
+su - user_name :lets me log into new user 
+add user_name to sudoers list with sudo usermod -aG sudo user_name
+sudo deluser newuser sudo: removing sudo access
+sudo groupadd new_group
+verify groups with /etc/group/
+sudo usermod -aG new_group
+chmod
+alias hello=echo 'new alias'
