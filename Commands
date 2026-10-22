@@ -35,3 +35,6 @@ verify groups with /etc/group/
 sudo usermod -aG new_group
 chmod
 alias hello=echo 'new alias'
+find
+ps auxf : see which proccesses are running. narrow down with lfof -open files and their processes. follow with the file path you want
+kill :kill process
