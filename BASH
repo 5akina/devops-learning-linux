@@ -1,0 +1,124 @@
+if statements:
+if [ "name" == "Alice" ]
+then
+echo "Hello, Alice!"
+== and = work the same way inside [ ]
+Outside of brackets only use =
+
+else and elif
+
+- Provides an alternative outcome if the if condition is not true. 
+else 
+ # code block if it's false
+#  end statement with:
+fi 
+
+age=15
+
+if [ $age -gt 18 ]
+then 
+echo "You are an adult"
+else
+echo "You are not an adult!"
+fi
+
+elif, allows to add another condition if the first one is false
+
+Nested if statements
+runs both if statements at once. ends in two fis
+#!/bin/bash
+
+age=18
+grade=85
+
+if [ $age -gt 18 ] then
+echo "You are eligible based on age"
+if [ $grade -ge 80 ]; then
+echo "You are eligible based on grade"
+echo "Congrats" You are eligible for a scholarship"
+else 
+echo "Sorry, you are not eligible"
+fi
+
+while loops
+
+while (condition) 
+do
+ # code to be executed. Loop continues until condition is false
+done
+
+count=1
+
+while [ $count -le 5  ]
+do 
+echo "Count: $count"
+((count++)) 
+# the above adds 1 for each iteration of the while loop
+done
+
+fruits=("apple "banana" "orange"
+index=0
+
+while [ $index -lt ${#fruits [@]} ]
+do
+echo "Fruit: ${fruits[$index]"}
+((index++))
+done
+
+definitions: an array stores multiple values in one variable 
+image.png
+
+for loops
+
+perform repetitive tasks
+
+for variable in sequence
+do
+# code block to be executed
+done
+
+for ((  i=1; i<=5; i++ ))
+do
+echo "Number= $1"
+done 
+
+$(seq 1 5)  # numbers 1 to five
+
+break statement exits the loop regardless of the conditions
+image.png
+
+continue statement - continues to the next bit after. skips the iteration
+
+# Functions
+
+function_name() {
+   # code to be executed
+}
+
+# Example
+
+hello_world() {
+echo "Hello World"
+}
+# to call the function just type it by its name
+hello_world
+
+# example 2
+
+greet_person() {
+local name="$1"
+echo "Hello, $name"
+}
+
+greet_person "Sam"
+
+# example 3 parameters
+
+print_args() {
+echo "Number of arguments: $#"
+echo "Script name: $0"
+echo "First argument: $!"
+echo "Second argument: $2"
+echo "All arguments: $@"
+}
+print_args "Alice" "Bob"
