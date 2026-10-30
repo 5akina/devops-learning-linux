@@ -122,3 +122,31 @@ echo "Second argument: $2"
 echo "All arguments: $@"
 }
 print_args "Alice" "Bob"
+
+# User input
+
+greet_user() {
+ echo "What is your name?"
+ read name
+ echo "Hello, $name!"
+}
+
+greet_user
+# run this script
+
+# my script:
+ 		    
+#!/bin/bash
+                                                                                                                                                                                                    
+echo "what is your name?"
+                                                                                                                                                                                                    
+read name
+                                                                                                                                                                                                    
+if [ $name == "sakina" ]; then
+echo "Hello, Sakina"
+else
+echo "I don't know you."
+fi
+~                 
+
+if [[ ! a
